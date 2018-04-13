@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CRMediator+A.h"
 
 @interface ViewController ()
 
@@ -16,13 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"首页";
 }
 
+- (IBAction)buttonAction:(id)sender {
+    UIViewController *vc = [[CRMediator shareInstance] aViewControllerWithText:@"MainProject 进入显示文字"];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

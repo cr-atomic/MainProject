@@ -1,5 +1,8 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/A" "${PODS_CONFIGURATION_BUILD_DIR}/A_Category" "${PODS_CONFIGURATION_BUILD_DIR}/B" "${PODS_CONFIGURATION_BUILD_DIR}/B_Category" "${PODS_CONFIGURATION_BUILD_DIR}/CRMediator"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/A/A.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/A_Category/A_Category.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/B/B.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/B_Category/B_Category.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/CRMediator/CRMediator.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "A" -framework "A_Category" -framework "B" -framework "B_Category" -framework "CRMediator"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

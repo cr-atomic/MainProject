@@ -1,0 +1,6 @@
+framework module CRMediator {
+  umbrella header "CRMediator-umbrella.h"
+
+  export *
+  module * { export * }
+}

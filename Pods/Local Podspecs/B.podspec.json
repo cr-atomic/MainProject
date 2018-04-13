@@ -1,0 +1,22 @@
+{
+  "name": "B",
+  "summary": "B业务",
+  "version": "0.0.2",
+  "homepage": "https://github.com/cr-atomic/B",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "cocoaroger": "coacoaroger@gmail.com"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/cr-atomic/B.git",
+    "tag": "0.0.2"
+  },
+  "source_files": "B/B/**/*.{h,m}"
+}

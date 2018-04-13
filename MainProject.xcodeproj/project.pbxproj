@@ -106,6 +106,7 @@
 				DBFC3A41207235B20046E762 /* Sources */,
 				DBFC3A42207235B20046E762 /* Frameworks */,
 				DBFC3A43207235B20046E762 /* Resources */,
+				BA22EB66EE67B9D4C08CA93C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +164,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		BA22EB66EE67B9D4C08CA93C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MainProject/Pods-MainProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/A/A.framework",
+				"${BUILT_PRODUCTS_DIR}/A_Category/A_Category.framework",
+				"${BUILT_PRODUCTS_DIR}/B/B.framework",
+				"${BUILT_PRODUCTS_DIR}/B_Category/B_Category.framework",
+				"${BUILT_PRODUCTS_DIR}/CRMediator/CRMediator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/A.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/A_Category.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/B.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/B_Category.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CRMediator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MainProject/Pods-MainProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DB8398B46B0C466CB9DE4E58 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

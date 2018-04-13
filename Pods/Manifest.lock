@@ -1,3 +1,50 @@
-PODFILE CHECKSUM: 303393eb563d34add20ebdc5b3464884ece59b81
+PODS:
+  - A (0.0.1):
+    - B_Category (~> 0.0.2)
+  - A_Category (0.0.1):
+    - CRMediator
+  - B (0.0.2)
+  - B_Category (0.0.2):
+    - CRMediator
+  - CRMediator (0.0.1)
+
+DEPENDENCIES:
+  - A (from `https://github.com/cr-atomic/A.git`)
+  - A_Category (from `https://github.com/cr-atomic/A_Category.git`)
+  - B (from `https://github.com/cr-atomic/B.git`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CRMediator
+  https://github.com/cr-atomic/CRPrivateRepos.git:
+    - B_Category
+
+EXTERNAL SOURCES:
+  A:
+    :git: https://github.com/cr-atomic/A.git
+  A_Category:
+    :git: https://github.com/cr-atomic/A_Category.git
+  B:
+    :git: https://github.com/cr-atomic/B.git
+
+CHECKOUT OPTIONS:
+  A:
+    :commit: 35fc60ea20c0eaaf2b1764e1bb1945e41e35e6d1
+    :git: https://github.com/cr-atomic/A.git
+  A_Category:
+    :commit: a72d20c3e2b6d730e03a6bfb316d28f259f4ecef
+    :git: https://github.com/cr-atomic/A_Category.git
+  B:
+    :commit: 73633a3ff6f43d18aa58947c9d57410ea17867c4
+    :git: https://github.com/cr-atomic/B.git
+
+SPEC CHECKSUMS:
+  A: b28d7ea20ed136cd1f5d76c3af89865a81aa2207
+  A_Category: ddd1fdf9207328b9c868bd280826af9478185620
+  B: 9ae2f883592a6ca114c22c8e386c1af68d66263f
+  B_Category: b405b8e6d59d484a6f902ed9af146f2ff846f1b6
+  CRMediator: 5e40770e306e01b1face5212b21b435df059fd78
+
+PODFILE CHECKSUM: 159cbdd0dfe0f8ffb17050e111e90ee574ef9e0b
 
 COCOAPODS: 1.5.0

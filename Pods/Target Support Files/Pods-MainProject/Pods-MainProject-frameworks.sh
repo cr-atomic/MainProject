@@ -141,6 +141,21 @@ strip_invalid_archs() {
   STRIP_BINARY_RETVAL=1
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/A/A.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/A_Category/A_Category.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/B/B.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/B_Category/B_Category.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CRMediator/CRMediator.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/A/A.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/A_Category/A_Category.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/B/B.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/B_Category/B_Category.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CRMediator/CRMediator.framework"
+fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi

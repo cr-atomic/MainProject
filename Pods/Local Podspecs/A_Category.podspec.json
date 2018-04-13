@@ -1,0 +1,27 @@
+{
+  "name": "A_Category",
+  "summary": "A业务中间件",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cr-atomic/A_Category",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "cocoaroger": "coacoaroger@gmail.com"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/cr-atomic/A_Category.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "A_Category/A_Category/*.{h,m}",
+  "dependencies": {
+    "CRMediator": [
+
+    ]
+  }
+}

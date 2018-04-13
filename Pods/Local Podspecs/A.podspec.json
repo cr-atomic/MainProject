@@ -1,0 +1,27 @@
+{
+  "name": "A",
+  "summary": "A业务",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cr-atomic/A",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "cocoaroger": "coacoaroger@gmail.com"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/cr-atomic/A.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "A/A/**/*.{h,m}",
+  "dependencies": {
+    "B_Category": [
+      "~> 0.0.2"
+    ]
+  }
+}
